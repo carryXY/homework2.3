@@ -1,8 +1,16 @@
 
 public abstract class Ingredient {
-    private String name;
-    private Double price;
-    private String category;
+    protected String name;
+    protected Double price;
+    protected String category;
 
+    @Override
+    public String toString() {
+        return "Ingredient{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", category='" + category + '\'' +
+                '}';
+    }
 }
 
