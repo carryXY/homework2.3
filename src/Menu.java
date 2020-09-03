@@ -11,6 +11,8 @@ public class Menu {
                 new Cola(5d, "drink")));
 
         myMenu.display();
+
+        myMenu.searchMenu("Prod1");
     }
 
     public void addProduct(Product p) {
@@ -20,6 +22,15 @@ public class Menu {
     public void display() {
         for(Product p : menuItems) {
             System.out.println(p);
+        }
+    }
+
+    public void searchMenu(String productName) {
+        System.out.println("Search results: ");
+        for(Product p : menuItems) {
+            if(p.getName().equals(productName)) {
+                System.out.println(p);
+            }
         }
     }
 }

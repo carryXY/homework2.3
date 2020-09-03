@@ -18,4 +18,9 @@ public class Product {
         return "Product [ name = " + name + " ," +
                 "ingredientList=" + ingredientList + "]" ;
     }
+
+    public String getName() {
+        return this.name;
+    }
+
 }
